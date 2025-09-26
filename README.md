@@ -11,7 +11,7 @@ npm install typeshaper
 ## Usage
 
 ```typescript
-import { assertArrayMapOf, assertDefined, assertPropString, assertPropNumber, assertPropArrayOf, assertPropArrayMapOf, isString } from 'typeshaper';
+import { assertArrayMapOf, assertDefined, assertPropString, assertProp, assertPropNumber, assertPropArrayOf, assertPropArrayMapOf, isString, isInstanceOf } from 'typeshaper';
 
 const users: unknown = await fetchUserListFromSomewhere();
 
@@ -24,6 +24,7 @@ assertArrayMapOf(users, function (user) {
     assertDefined(post);
     assertPropString(post, 'title');
     assertPropString(post, 'content');
+    assertProp(isInstanceOf(Date), post, 'createdAt');
     return post;
   });
   return user;
@@ -34,7 +35,7 @@ assertArrayMapOf(users, function (user) {
  *   name: string;
  *   age: number;
  *   tags: Array<string>;
- *   posts: Array<{ title: string; content: string; }>;
+ *   posts: Array<{ title: string; content: string; createdAt: Date }>;
  * }>
  */
 

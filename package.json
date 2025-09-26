@@ -1,11 +1,14 @@
 {
   "name": "typeshaper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "TypeScript small utility functions to narrow down types",
   "license": "MIT",
   "author": {
     "email": "faisalhakim47@gmail.com",
     "name": "Faisal Hakim"
+  },
+  "repository": {
+    "url": "https://github.com/faisalhakim47/typeshaper"
   },
   "type": "module",
   "main": "lib/typeshaper.js",
