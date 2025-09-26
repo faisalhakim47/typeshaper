@@ -1,6 +1,6 @@
 {
   "name": "typeshaper",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "TypeScript small utility functions to narrow down types",
   "license": "MIT",
   "author": {
