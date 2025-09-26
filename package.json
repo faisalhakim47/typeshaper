@@ -1,0 +1,23 @@
+{
+  "name": "typeshaper",
+  "version": "1.0.0",
+  "description": "TypeScript small utility functions to narrow down types",
+  "license": "MIT",
+  "author": {
+    "email": "faisalhakim47@gmail.com",
+    "name": "Faisal Hakim"
+  },
+  "type": "module",
+  "main": "lib/typeshaper.js",
+  "types": "lib/typeshaper.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "node --test test/**/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
